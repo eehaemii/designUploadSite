@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" > 
+    <title>design compilation</title> 
+    <meta content="" property="og:title"> 
+    <meta content="" property="og:url"> 
+    <meta content="" property="og:description"> 
+    <meta content="" property="og:image">
+    <meta content="website" property="og:type"> 
+    <meta content="" property="og:site_name"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <!-- hmlt5 support -->
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+        사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+        <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+        <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+        <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+        <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+        <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a>
+    </p>
+    <![endif]-->
+
+    <!--// hmlt5 support -->
+</head>
+<body>
+    <div id="wrap">
+        <div class="intro-wrap">
+            <!-- s :: intro head  -->
+            <section class="intro-head">
+                <h1 class="company-tit">COMPANY</h1>
+                <span class="line"></span>
+                <p class="txt">DESIGN <br/> COMPILATION</p>
+            </section>
+            <!-- // intro head  -->
+            <!-- s :: main -->
+            <div id="main">
+                <section class="intro-form">
+                    <form class="form">
+                        <p class="form-tit">Member login</p>
+                        <div class="form-group">
+                            <label class="hide" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-input" id="exampleInputEmail3" placeholder="Enter email" value="admin@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="hide" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-input" id="exampleInputPassword3" placeholder="Password" value="qwer1234!">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                <i class="icheck">체크박스</i>
+                                <span> Save ID</span>
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-default submit" onclick="buttonLink();">Sign in</button>
+                    </form>
+                </section>
+            </div>
+            <!-- // main -->
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+
+        function buttonLink(){
+            location.href = "/views/main.html";
+        }
+
+        $(function(){
+
+            // intro
+            $(window).bind('mousewheel', function(e) {
+                if (e.originalEvent.wheelDelta / 120 > 0) {
+                    $('.intro-head').css({ 'top': '10%' });
+                    $('.intro-wrap .intro-form').css({ 'top': '150%' });
+                    setTimeout(function(){
+                        $('.scroll-event').css({ 'opacity': '1' });
+                    }, 800);
+                } else {
+                    $('.intro-head').css({ 'top': '-100%' });
+                    $('.intro-wrap .intro-form').css({ 'top': '50%' });
+                    $('.scroll-event').css({ 'opacity': '0' });
+                }
+            });
+        })
+
+    </script>
+</body>
+</html>

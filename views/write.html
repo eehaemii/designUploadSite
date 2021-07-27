@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" > 
+    <title>design compilation</title> 
+    <meta content="" property="og:title"> 
+    <meta content="" property="og:url"> 
+    <meta content="" property="og:description"> 
+    <meta content="" property="og:image">
+    <meta content="website" property="og:type"> 
+    <meta content="" property="og:site_name"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <!-- hmlt5 support -->
+    
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+        사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+        <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+        <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+        <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+        <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+        <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a>
+    </p>
+    <![endif]-->
+
+    <!--// hmlt5 support -->
+</head>
+<body>
+    <div id="wrap">
+        <!-- start skipNav -->
+        <div id="skipNav">
+            <a href="#gnb-wrap" class="navMenu">대메뉴로 바로가기</a>
+            <a href="#detail-content" class="navMenu">본문으로 바로가기</a>
+        </div>
+        <!-- //skipNav-->
+        <!-- s :: dimbox -->
+        <div class="dimbox"></div>
+        <!-- // dimbox -->
+        <div class="dsp-flex">
+            <!-- s : asideMenu -->
+            <div id="aside-wrap">
+                <aside class="gnb-wrap">
+                    <div class="fixed-head">
+                        <div class="menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="gnb-box">
+                        <ul class="menu-list">
+                            <li><a href="../views/main.html" class="menu-list-link tit">HOME</a></li>
+                            <li><a href="javascript:;" class="menu-list-link">menu01</a></li>
+                            <li><a href="javascript:;" class="menu-list-link">menu02</a></li>
+                            <li><a href="javascript:;" class="menu-list-link">menu03</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <!-- // asideMenu -->
+            <div id="main">
+                <section class="cont-container">
+                    <!-- s: header -->
+                    <header class="cont-top-head">
+                        <h1>COMPANY <br/>DESIGN COMPILATION</h1>
+                        <button type="button" class="lock"></button>
+                    </header>
+                    <!-- // header -->
+                    <!-- s :: content-area -->
+                    <article class="content-area">
+                        <span class="line"></span>
+                        <header class="cont-head justcontent-between">
+                            <h2 class="cont-tit">PROJECT </h2>
+                        </header>
+                        <div class="view-content-area">
+                            <div class="view-contBox write-contBox">
+                                <ul class="check-list">
+                                    <li class="radiobox">
+                                        <label>
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                            <i class="iradio">라디오</i>
+                                            <span> 기획서</span>
+                                        </label>
+                                    </li>
+                                    <li class="radiobox">
+                                        <label>
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                            <i class="iradio">라디오</i>
+                                            <span> 디자인</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <form action="" name="formChek">
+                                    <div class="form-group mt-15">
+                                        <input type="subject" class="form-input" placeholder="제목을 입력하세요">
+                                    </div>
+                                    <textarea class="form-input mt-15" rows="10" placeholder="내용을 입력하세요"></textarea>
+                                    <ul class="form-group mt-15 fileForm ">
+                                        <li class="dsp-flex">
+                                            <label for="inputEmail3" class="control-label col-tit">URL</label>
+                                            <input type="URL" class="form-input url-control" placeholder="URL">
+                                        </li>
+                                        <li class="dsp-flex mt-15 input-form-box">
+                                            <label for="inputEmail3" class="control-label col-tit">첨부파일</label>
+                                            <div>
+                                                <div class="imgBox">
+                                                    <div class="img"></div>
+                                                </div>
+                                                <div class="pdfFile"></div>
+                                                <div class="file-attachment">
+                                                    <button class="addfiles">파일선택</button>
+                                                    <input id="imgInp" class="fileupload" type="file" name="files[]" multiple="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="button-list dsp-flex-end mt-15">
+                                        <button type="button" class="btn btn-out-dark w-85" onclick="buttonLink();">취소</button>
+                                        <button type="button" class="btn btn-dark w-85 ml-10">저장</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- // content-area -->
+                </section>
+            </div>
+            <!-- s : footer -->
+            <footer class="footer">
+                <div class="cont-container">
+                    <p class="copyright">© Company. All Rights Re-served</p>
+                </div>
+            </footer>
+            <!-- // footer -->
+        </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script>
+        function buttonLink(){
+            location.href = "/views/project.html";
+        }
+        $(function(){
+            $(document).on('click','.cancleBtn', function(){
+                console.log($(this).find('.project-dim'));
+                $(this).find('.project-dim').css({'display':'block'});
+            });
+
+            $("#imgInp").on('change', function(){
+                readURL(this);
+            });
+
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    // $('.imgBox').empty();
+                    for(var i = 0; i < input.files.length; i++) {
+                        var reader = new FileReader();
+    
+                        reader.onload = function (e) {
+                                $('.imgBox').append('<span><i class="close-icon"></i><img id="blah'+i+'" src="'+e.target.result+'" alt="your image" /></span>');
+                            }
+    
+                        reader.readAsDataURL(input.files[i]);
+                    }
+                }
+            }
+
+            $(document).on('click','.close-icon', function(){
+                $(this).parent('.imgBox span').hide();
+            });
+
+        });
+    </script>
+</body>
+</html>
