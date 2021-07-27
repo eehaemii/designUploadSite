@@ -11,3 +11,5 @@
 - html, css, bootstrap
 
 ## LINK
+
+- https://eehaemii.github.io/designUploadSite/views/intro.html
